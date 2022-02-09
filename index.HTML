@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="expense-title">
+        <h1>Expense Tracker</h1>
+        <h2>Add a New Item</h2>
+        <div class="expense-info">
+          <div class="expense-input">
+            <h3>Name</h3>
+            <input type="text" class="user-name" />
+          </div>
+          <div class="expense-input">
+            <h3 class="date">Date</h3>
+            <input type="date" id="date" placeholder="mm-dd-yyyy" />
+            <h3>Amount</h3>
+            $<input type="number" step="0.01" id="amount" />
+          </div>
+        </div>
+        <button class="add">Add Expense</button>
+        <div class="message"><h3></h3></div>
+      </div>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>option</th>
+          </tr>
+        </thead>
+        <tbody class="expense-data">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
